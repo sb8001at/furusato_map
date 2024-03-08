@@ -23,4 +23,4 @@ vec_ken <- c("Number_donations_accepted", "Number_donations_from_outside", "Dona
 vec_yen <- c(
   "Donation_amount_accepted", "Donation_amount_from_outside", "Costs_procure_gifts",
   "Costs_return_gifts", "Costs_PR", "Costs_settlement", "Costs_Administration",
-  "Costs_others", "Donation_amount_per_pop")
+  "Costs_others", "Total_costs", "Donation_amount_per_pop")

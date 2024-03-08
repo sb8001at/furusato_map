@@ -23,13 +23,13 @@ function(input, output, session) {
       paste0(format(val |> round(2), big.mark = ",", scientific = F) |> str_trim(), "円")
   } else if(col_selected == "pop_change_rate"){
     char_val <- 
-      paste0(val |> round(3), "%")
+      paste0(val |> round(2), "%")
   } else if(col_selected == "household"){
     char_val <- 
       paste0(format(val, big.mark = ",", scientific = F) |> str_trim(), "軒")
   }
   
-  bins <- quantile(val |> na.omit(), probs=seq(0, 1, by=0.1)) |> round(3)
+  bins <- quantile(val |> na.omit(), probs=seq(0, 1, by=0.1)) |> round(5)
   pal <- colorBin("Spectral", domain = val, bins = bins, reverse=TRUE)
   
   geo |> 
