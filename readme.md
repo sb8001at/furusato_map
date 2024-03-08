@@ -3,7 +3,7 @@
 ふるさと納税の納税額や使用用途をマップ上に表示するShinyアプリです。以下のコードを実行することでShinyをローカル環境で実行することができます。
 
 ```r
-if(!require(shiny)){install.packages("shiny")};runGitHub("furusatomap", "sb8001at")
+if(!require(shiny)){install.packages("shiny")};runGitHub("furusato_map", "sb8001at")
 ```
 
 ## 参考資料
